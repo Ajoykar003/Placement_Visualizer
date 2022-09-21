@@ -1,0 +1,271 @@
+
+
+
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'assets/style.css' %}">
+    <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon">
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+        integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>Boot</title>
+</head>
+
+<body>
+    <!-- header -->
+    <header>
+        <div class="container-fluid">
+            <img class="logo img-circle" src="{% static 'assets/logo.png' %}" width="7%" style="float:left">
+            <img class="logo img-circle" src="{% static 'assets/rkmgec_logo.jpg' %}" width="7%" style="float:right">
+        </div>
+        <div>
+            <h3 style="opacity: 0.8; margin-left: 10%;"><i>RKMGEC Placement</i></h3>
+        </div>
+
+    </header>
+    <!-- navbar -->
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">BooT</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="home">Home</a></li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Placement
+                        <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="record">2016-20</a></li>
+                        <li><a href="#">2017-21</a></li>
+                        <li><a href="#">2018-22</a></li>
+                    </ul>
+                </li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="contact">Upload</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- main portion -->
+    <main>
+        <!-- slide -->
+        <div class="container-fluid">
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                </ol>
+
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <img src="{% static 'assets/College.jpeg'%}" alt="Los Angeles" style="width: 100%; height: 600px;">
+                    </div>
+
+                    <div class="item">
+                        <img src="{% static 'assets/college_job_profile.jpg' %}" alt="Chicago" style="width: 100%; height: 600px;">
+                    </div>
+
+                    <div class="item">
+                        <img src="{% static 'assets/college2.jpeg' %}"alt="New York" style="width: 100%; height: 600px;">
+                    </div>
+                </div>
+
+                <!-- Left and right controls -->
+                <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+
+
+
+        <div class="container">
+            <div class="row">
+                <h1 class="text-center"><b>Principal Voice</b></h1>
+                <div class="col-xs-6 col-sm-4">
+                    <img src="{% static 'assets/principal.jpg' %}"width="100%" height="200px">
+                </div>
+                <div class="col-xs-6 col-sm-8">
+                    It is a great honour and privilege for me to welcome you to Ramkrishna Mahato Government Engineering
+                    College, Purulia (Formerly Purulia Government Engineering College) which has been rendering
+                    engineering education since 2016.The college takes pride in the team of its qualified faculty and
+                    staff members who take every effort in mentoring and transforming the budding students so that they
+                    can contribute their best to the society and to the country with good employability skill and
+                    charact
+                    Wish you a very fruitful stay in Ramkrishna Mahato Government Engineering College, Purulia campus
+                    for next few years of your youth: the decisive years of your life.
+                </div>
+
+            </div><br><hr>
+            <div class="row">
+                <h1 class="text-center"><b>About Our College</b></h1>
+                <div class="col-xs-6 col-sm-8">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Id quaerat inventore quo ea, temporibus
+                    placeat neque. Optio, perspiciatis vel iusto neque suscipit omnis, praesentium consectetur placeat
+                    eaque aut laboriosam ratione maxime accusamus quae provident voluptatum pariatur ea explicabo
+                    officia corrupti dolorem aliquid qui veniam! Architecto nostrum natus recusandae tenetur quasi
+                    cupiditate tempora veritatis vitae inventore porro esse nisi accusantium quam reprehenderit maiores
+                    corrupti dolore cumque, voluptate asperiores provident ab exercitationem. Repellat, ea praesentium?
+                    Reiciendis hic, iste earum voluptate dolore tempora adipisci ducimus numquam odio eveniet quibusdam
+                    recusandae et reprehenderit nihil? Sint quia eveniet minus illum perspiciatis voluptatem
+                    repellendus, laboriosam id!
+                </div>
+                <div class="col-xs-6 col-sm-4">
+                    <img src="{% static 'assets/College.jpeg'%}" width="100%">
+                </div>
+            </div><br><hr>
+            <div class="row">
+                <h1 class="text-center"><b>Past Recruiters</b></h1>
+                <div class="row">
+                    <div class="col-xs-2">
+                        <img src="{% static 'assets/Accenture.png' %}" width="100%">
+                    </div>
+                    <div class="col-xs-2">
+                        <img src="{% static  'assets/Cognizant.png' %}" width="100%">
+                    </div>
+                    <div class="col-xs-2">
+                        <img src="{%  static 'assets/infosys.jpg' %}" width="100%">
+                    </div>
+                    <div class="col-xs-2">
+                        <img src="{% static 'assets/tcs.png' %}" width="100%">
+                    </div>
+                    <div class="col-xs-2">
+                        <img src="{% static 'assets/wipro.png' %}" width="100%">
+                    </div>
+                    <div class="col-xs-2">
+                        <img src="{% static 'assets/logo.png' %}" width="100%">
+                    </div>
+                </div><br>
+                <div class="row">
+                    <div class="col-xs-2">
+                        <img src="{% static 'assets/tcs.png' %}" width="100%">
+                    </div>
+                    <div class="col-xs-2">
+                        <img src="{% static 'assets/logo.png' %}" width="100%">
+                    </div>
+                    <div class="col-xs-2">
+                        <img src="{% static 'assets/wipro.png'%}" width="100%">
+                    </div>
+                    <div class="col-xs-2">
+                        <img src="{% static 'assets/capgemini.png'%}" width="100%">
+                    </div>
+                    <div class="col-xs-2">
+                        <img src="{% static 'assets/india_post.png'%} " width="100%">
+                    </div>
+                    <div class="col-xs-2">
+                        <img src="{% static 'assets/ibm.png' %}" width="100%">
+                    </div>
+                </div>
+
+            </div><br><hr>
+            <div class="row" id="contact">
+                <h1 class="text-center"><b>Contact Us</b></h1>
+
+
+                <div class="row">
+                    <div class="col-xs-6" style="font-size: large;font-weight: 900; font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+                        <form action="">
+                            <div class="form-group">
+                                <label for="user">Name:</label>
+                                <input type="text" class="form-control" id="user">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email:</label>
+                                <input type="email" class="form-control" id="email">
+                            </div>
+                            <div class="form-group">
+                                <label for="comment">Comment:</label>
+                                <textarea class="form-control" rows="5" id="comment"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <button type="button" class="btn btn-success">Submit</button>
+                            </div><br>
+
+                        </form>
+                    </div>
+
+                    <div class="col-xs-6" style="font-size: large;font-weight: 900; font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+                        <div>
+                            <span>
+                                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                            </span>
+                            <span>
+                                Ramkrishna Mahato
+                                Government Engineering College,</span><br>
+                            <span>Vill: Agharpur,</span><br>
+                            <span>P.O.- Ramamoti,</span><br>
+                            <span>P.S.- Joypur,</span><br>
+                            <span>Dist.- Purulia 723103.</span>
+                            </span>
+                        </div><br>
+                        <div>
+                            <span>
+                                <i class="fa fa-envelope" aria-hidden="true"></i>
+                            </span>
+                            <span>
+                                ayanbera25@gmail.com
+                            </span>
+                        </div><br>
+                        <div>
+                            <span>
+                                <i class="fa fa-phone" aria-hidden="true"></i>
+                            </span>
+                            <span>
+                                8240292621
+                            </span>
+                        </div>
+                    </div>
+
+                </div><br>
+                <div class="row">
+                    <div class="mapouter tm-mb-40">
+                        <div class="gmap_canvas">
+                            <iframe width="80%" height="375px" style="margin-left: 10%;" id="gmap_canvas"
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10354.622895226013!2d86.1958440353144!3d23.42754464547846!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f42bd030b6ed53%3A0x4b97db1500c8b4a3!2sRam%20Krishna%20Mahato%20Government%20Engineering%20College%2C%20Purulia!5e0!3m2!1sen!2sin!4v1652282499249!5m2!1sen!2sin"
+                                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main><br>
+    <!-- footer -->
+    <footer>
+        <div class="container-fluid" style="background-color:grey;color: white;">
+            <h4 class="text-center">Designed by BooT</h4>
+            <h5 class="text-center">copyright &copy; 2022</h5>
+        </div>
+
+    </footer>
+
+</body>
+
+</html>tml>

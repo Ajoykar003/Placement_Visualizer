@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>record</title>
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous"
+</head>
+<body>
+{% for post in allpost %}
+<div class="card-deck" align="middle">
+<div class="card border-primary mb-3" style="max-width: 70%;">
+  <h5 class="card-header"> <p> {{post.name}}</p></h5>
+  <div class="card-body" align="left">
+    <h5 class="card-title"> <p> {{post.company_name}}</p></h5>
+    <p class="card-text">  {{post.email}}</p>
+       <p class="card-text">  Completion Year : {{post.Passout_year}}</p>
+       <p class="card-text"> Job Role : {{post.job_role}}</p>
+
+    <a href="{{post.linkedin_id}}" class="btn btn-primary">Linkedin</a>
+  </div>
+</div>
+</div>
+{% endfor %}
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
